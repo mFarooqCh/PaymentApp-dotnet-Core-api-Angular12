@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+label {
+  color: gray;
+  font-size: 12px;
+}
+
+input.invalid {
+  border: 1px solid red;
+}
+input.valid {
+  border: 1px solid green;
+}
+.fa:hover {
+  cursor: pointer;
+}

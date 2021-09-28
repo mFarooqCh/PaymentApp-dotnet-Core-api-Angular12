@@ -1,0 +1,37 @@
+<div class="card">
+    <div class="card-header px-5 py-4 bg-secondary">
+        <div class="card-title display-4 text-white text-center">Payment API</div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="py-2">Registeration</h4>
+                <app-payment-detail-form></app-payment-detail-form>
+            </div>
+            <div class="col-md-6">
+                <h4 class="py-2">Details</h4>
+                <table class="table table-responsive text-center table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Card Owner</th>
+                            <th>Card Number</th>
+                            <th>Expiry Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let data of service.dataList ">
+                            <td (click)="populateForm(data)">{{data.cardOwnerName}}</td>
+                            <td (click)="populateForm(data)">{{data.cardNumber}}</td>
+                            <td (click)="populateForm(data)">{{data.expiryDate}}</td>
+                            <td>
+                                <i (click)="deleteRecord(data.paymentDetailID)" class="fa fa-trash text-danger fa-lg"
+                                    title="Delete"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
