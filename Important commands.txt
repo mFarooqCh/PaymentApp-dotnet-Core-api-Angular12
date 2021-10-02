@@ -1,5 +1,0 @@
-
-////to skip component level css and test files for a component, use below command
-ng g c payment-details -s --skip-tests 
-
-

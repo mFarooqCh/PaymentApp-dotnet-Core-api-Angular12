@@ -1,0 +1,18 @@
+
+//hosted site
+
+https://ngpaymentapp.web.app/
+
+
+
+
+
+////to skip component level css and test files for a component, use below command
+ng g c payment-details -s --skip-tests 
+
+//to deploy angular app to firebase hosting, follow these steps
+https://www.bacancytechnology.com/blog/deploy-angular-12-application-using-firebase-hosting
+
+
+
+

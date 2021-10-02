@@ -44,7 +44,8 @@ namespace PaymentAPI
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseCors(options =>
-            options.WithOrigins("http://localhost:4200") //to alloe CORS calls from this specific domains.
+            //options.WithOrigins("http://localhost:4200") //to alloe CORS calls from this specific domains.
+            options.WithOrigins("https://ngpaymentapp.web.app") //to allow CORS calls from this specific domains.
             .AllowAnyMethod()
             .AllowAnyHeader()
             );
